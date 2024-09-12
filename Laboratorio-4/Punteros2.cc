@@ -12,11 +12,9 @@ void DeterminarPar(int* numero){
 }
 
 int main() {
-  int numero;
+  int numero = 10;
   int* puntero_numero = &numero;
-    std::cout << "Ingrese un numero: ";
-    std::cin >> numero;
-    DeterminarPar(puntero_numero);
+  DeterminarPar(puntero_numero);
   
   return 0;
 }

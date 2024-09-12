@@ -29,6 +29,6 @@ int main(){
     int arregloNumeros[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};	
     int tamano = sizeof(arregloNumeros)/sizeof(arregloNumeros[0]);
     int* puntero_arregloNumeros = arregloNumeros;
-    DeterminarPar(puntero_arregloNumeros, &tamano);
+    DeterminarParVersion2(puntero_arregloNumeros, &tamano);
 }
 

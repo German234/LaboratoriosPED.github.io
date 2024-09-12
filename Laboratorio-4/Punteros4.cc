@@ -17,11 +17,12 @@ void MostrarPersona(Persona *persona, int *cantidadPersonas){
  
 }
 
-
 void MostrarPersonaVersion2(Persona *persona,int *cantidadPersonas){
     for (int i = 0; i < *cantidadPersonas; i++)
     {
         std::cout << "Nombre: " << (persona + i)->nombre << std::endl;
+        //() -> nombre es equivalente a persona[i].nombre, la -> es para acceder a los atributos de una estructura a traves de un puntero
+        // Primero se desreferencia el puntero y luego se accede al atributo de la estructura
         std::cout << "Edad: " << (persona + i)->edad << std::endl;    
     }
 
@@ -33,9 +34,9 @@ int main(){
     
     int cantidadPersonas = 3;
 
-    //declaracion de arreglo de estructuras
+    //declaracion de un arreglo de estructuras junto con la asignacion de memoria dinamica
     Persona *personas = new Persona[cantidadPersonas];
-
+    //Persona personas[cantidadPersonas];
 
     // Persona personas[cantidadPersonas];
     personas[0].nombre = "Juan";
