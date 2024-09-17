@@ -23,6 +23,8 @@ void InsertarLista(Nodo *&lista, int numero){ //Se pasa por referencia para que 
     }
 
     std::cout << "Elemento " << numero << " insertado a la lista" << std::endl;
+
+    delete nuevo_nodo; //Liberar memoria
 }
 
 void MostrarLista(Nodo *lista){
